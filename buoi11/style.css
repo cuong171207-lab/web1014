@@ -1,0 +1,27 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    transition: all 0.3s ease;
+}
+.box1:hover{
+    background-color: lightgreen;
+    transform: scale(1.2) rotate(45deg);
+}
+
+.box2{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-color: lightcoral;
+    animation: move 5s infinite;
+}
+@keyframes move{
+    0%{
+        transform: translateX(300px);
+    }
+
+    100%{
+        transform: translateX(-300px);
+    }
+}
